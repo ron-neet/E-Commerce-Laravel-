@@ -4,7 +4,7 @@
     <!-- Bootstrap 5 Carousel -->
     <div id="productCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-        <!-- Indicators -->
+        
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="0" class="active" aria-current="true"
                 aria-label="Slide 1"></button>
@@ -12,7 +12,7 @@
             <button type="button" data-bs-target="#productCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
 
-        <!-- Slides -->
+        
         <div class="carousel-inner">
             @foreach ($product->take(3) as $products)
                 <div class="carousel-item {{$products['id'] == 1 ? 'active' : ''}}">
@@ -28,7 +28,7 @@
             @endforeach
         </div>
 
-        <!-- Controls -->
+        
         <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
